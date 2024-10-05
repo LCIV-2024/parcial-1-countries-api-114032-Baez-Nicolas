@@ -1,6 +1,5 @@
 package ar.edu.utn.frc.tup.lciii.configs;
 
-
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.swagger.v3.core.jackson.ModelResolver;
 import io.swagger.v3.oas.models.Components;
@@ -16,8 +15,8 @@ import org.springframework.context.annotation.Configuration;
 public class SpringDocConfig {
 
     @Value("${app.url}") private String url;
-    @Value("${app.dev-name}")private String devName;
-    @Value("${app.dev-email}")private String devEmail;
+    @Value("${app.dev-name}") private String devName;
+    @Value("${app.dev-email}") private String devEmail;
 
     @Bean
     public OpenAPI openApi (
